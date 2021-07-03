@@ -17,6 +17,10 @@ services:
     ports:
       - "${DCS_PORT-5555}:80"
       - "222:22"
+    volumes:
+      - ./data:/data
+      - /etc/timezone:/etc/timezone:ro
+      - /etc/localtime:/etc/localtime:ro
     networks:
       - tx-net
 
