@@ -1,9 +1,5 @@
 version: "3"
 
-networks:
-  tx-net:
-    external: false
-
 services:
   dcs:
     build:
@@ -24,3 +20,6 @@ services:
     networks:
       - tx-net
 
+networks:
+  tx-net:
+    external: false
