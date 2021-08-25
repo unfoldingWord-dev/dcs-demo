@@ -11,7 +11,7 @@ services:
       - USER_GID=1000
     restart: always
     ports:
-      - "${DCS_PORT-5555}:80"
+      - "${DCS_PORT-5555}:3000"
       - "222:22"
     volumes:
       - ./data:/data
